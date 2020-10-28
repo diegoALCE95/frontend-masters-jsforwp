@@ -5,9 +5,9 @@
   // Change the html() value to response.total_likes
   $( '.jsforwp-count' ).html( jsforwp_globals.total_likes );
 
-  $('.jsforwp-like').click( function(){
+  $('.jsforwp-like').click( function(e){
 
-    event.preventDefault();
+    e.preventDefault();
 
     // Change the url to jsforwp_globals.ajax_url
     // Change params.action to 'jsforwp_add_like'
